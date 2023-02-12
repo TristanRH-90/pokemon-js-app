@@ -1,12 +1,31 @@
-let pokemonList = [
-    { name: 'Charmeleon', height: 3.07,types: ['Fire'] },
-    { name: 'Charizard', height: 5.07,types: ['Fire","Flying'] },
-    { name: 'Charmander', height: 2.00, types: ['Fire'] }
-];
-
-for (let i = 0; i < pokemonList.length; i++) {
-    if(pokemonList[i].height >5)
-      document.write(pokemonList[i].name + ' wow thats huge');
-  }
-
+let pokemonRepository = (function () {
+    
+    let pokemonList = [
+      { name: 'Charmeleon', height: 3.07,types: ['Fire'] },
+      { name: 'Charizard', height: 5.07,types: ['Fire","Flying'] },
+      { name: 'Charmander', height: 2.00, types: ['Fire'] }
+  ];
+  
+  pokemonList.forEach(function(pokemon) {
+    document.write(pokemon.name + ' is ' + pokemon.height + ' Feet Tall.');
+  });
+  
+    function add(pokemon) {
+      pokemonList.push(pokemon);
+    }
+  
+    function getAll() {
+      return pokemonList;
+    }
+  
+    return {
+      add: add,
+      getAll: getAll
+    };
+  })();
+  
+  
+  console.log(pokemonRepository.getAll()); 
+  pokemonRepository.add({ name: 'Pikachu' });
+  console.log(pokemonRepository.getAll()); 
   
