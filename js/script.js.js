@@ -6,10 +6,6 @@ let pokemonRepository = (function () {
       { name: 'Charmander', height: 2.00, types: ['Fire'] }
   ];
   
-  pokemonList.forEach(function(pokemon) {
-    document.write(pokemon.name + ' is ' + pokemon.height + ' Feet Tall.');
-  });
-  
     function add(pokemon) {
       pokemonList.push(pokemon);
     }
@@ -28,4 +24,8 @@ let pokemonRepository = (function () {
   console.log(pokemonRepository.getAll()); 
   pokemonRepository.add({ name: 'Pikachu' });
   console.log(pokemonRepository.getAll()); 
+
+  pokemonRepository.getAll().forEach(function(pokemon) {
+    document.write(pokemon.name + ' is ' + pokemon.height + ' Feet Tall.');
+    });
   
