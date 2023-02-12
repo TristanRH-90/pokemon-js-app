@@ -2,7 +2,7 @@
 .button-class {
     background-color: aqua;
     border: none;
-    color: white;
+    color:white;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -15,3 +15,4 @@
     color: black;
     border: 2px solid;
 }
+
