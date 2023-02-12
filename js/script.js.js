@@ -29,3 +29,14 @@ let pokemonRepository = (function () {
     document.write(pokemon.name + ' is ' + pokemon.height + ' Feet Tall.');
     });
   
+    pokemonRepository.getAll().forEach(function(pokemon) {
+      let pokemonList = document.querySelector(".pokemonList");
+      let listpokemon = document.createElement("li");
+      let button = document.createElement("button");
+      button.innerHTML = "placeholder";
+      button.classList.add("button-class");
+      listpokemon.appendChild(button);
+      pokemonList.appendChild(listpokemon);
+
+      });
+    
