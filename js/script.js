@@ -1,7 +1,6 @@
 let pokemonRepository = (function () {
-    let pokemonList = [];
-    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=15';
-    
+  let pokemonList = [];
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 });
 
 
@@ -124,7 +123,6 @@ function add(pokemon) {
           }
         });
         
-      
   
     return {
       add: add,
@@ -133,14 +131,15 @@ function add(pokemon) {
       loadList: loadList,
       loadDetails: loadDetails,
       showDetails: showDetails,
-      showModal: showModal
+      showModal: showModal,
     };
   
 })();
 
-  pokemonRepository.loadList().then(function() {
+ loadList().then(function() {
     pokemonRepository.getAll().forEach(function (pokemon) {
       pokemonRepository.addListItem(pokemon);
     });
 });
+
 
