@@ -94,7 +94,7 @@ a, a:active, a:visited, a:focus {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
 .pokemon-button {
