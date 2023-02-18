@@ -98,14 +98,14 @@ a, a:active, a:visited, a:focus {
 }
 
 .pokemon-button {
-  padding: 10px;
-  font-size: 1.2rem;
+  padding: 8px;
+  font-size: 2.0rem;
   border: none;
   background-color: yellow;
   border-radius: 5px;
   margin: 10px;
   width: 200px;
-  transition: 0.4s background-color;
+  transition: 0.6s background-color;
   color: black;
 }
 
@@ -132,8 +132,8 @@ a, a:active, a:visited, a:focus {
 
 
 .lds-dual-ring {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
 }
 
 .lds-dual-ring-hidden {
@@ -147,8 +147,8 @@ a, a:active, a:visited, a:focus {
 .lds-dual-ring:after {
   content: " ";
   display: block;
-  width: 64px;
-  height: 64px;
+  width: 150px;
+  height: 150px;
   margin: 8px;
   border-radius: 50%;
   border: 6px solid red;
