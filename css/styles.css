@@ -12,7 +12,7 @@ body {
 
 
 main {
-  margin: 20px;
+  margin: 50px;
   line-height: 1.5;
   font-size: 1rem;
   text-align: center;
@@ -27,9 +27,10 @@ main {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 5.0rem;
   margin-top: 0;
   margin-bottom: 15px;
+  color: yellow;
 }
 
 h3 {
@@ -41,7 +42,7 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 2rem;
   margin-top: 0;
   margin-bottom: 0;
   color: red;
