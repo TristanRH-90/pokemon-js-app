@@ -1,4 +1,4 @@
-let pokemonRepository = (function () {
+let pokemonRepository = (function ()  {
   let pokemonList = [];
   let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
   let loadBar = document.querySelector(".spinner-grow");
@@ -20,10 +20,10 @@ let pokemonRepository = (function () {
       addListItem(pokemon);
     });
   });
-  
+
   //This function gets all Pokemon from the API
   function getAll() {
-    return pokemonList;
+    return pokemonList; 
   }
 
   // This function returns all Pokemon and pushes them to the Array..
@@ -82,7 +82,6 @@ let pokemonRepository = (function () {
       return pokemon.name.toLowerCase().includes(search.toLowerCase());
     });
   }
-
 
   // This function loads pokemon details from the API.
   function loadDetails(item) {
@@ -152,22 +151,20 @@ let pokemonRepository = (function () {
   }
 
   function searchPokemon() {
-    let input= document.querySelector(".search-input");
-    let pokemonList2= document.querySelector(".pokemon-list2")
-    let pokemonElements= pokemonList2.getElementsByTagName("li")
-    for (let i=0; i< pokemonElements.length; i++) {
-        pokemonElements[i].classList.remove("hide")
+    let input = document.querySelector(".search-input");
+    let pokemonList2 = document.querySelector(".pokemon-list2");
+    let pokemonElements = pokemonList2.getElementsByTagName("li");
+    for (let i = 0; i < pokemonElements.length; i++) {
+      pokemonElements[i].classList.remove("hide");
     }
 
-    for (let i=0; i< pokemonElements.length; i++) {
-        if(input.value=== ''){
-        } else if (pokemonElements[i].innerText.indexOf(input.value)) {
-            pokemonElements[i].classList.add("hide")
-        }
-    }        
-}
-
-
+    for (let i = 0; i < pokemonElements.length; i++) {
+      if (input.value === "") {
+      } else if (pokemonElements[i].innerText.indexOf(input.value)) {
+        pokemonElements[i].classList.add("hide");
+      }
+    }
+  }
 
   return {
     getAll: getAll,
@@ -179,9 +176,7 @@ let pokemonRepository = (function () {
     showDetails: showDetails,
     showModal: showModal,
     loadAll: loadAll,
-    searchPokemon: searchPokemon
-   
-    
+    searchPokemon: searchPokemon,
   };
 })();
 
