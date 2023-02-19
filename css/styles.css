@@ -1,7 +1,7 @@
 .html {
   font-size: 100%;
 }
-  
+
 body {
   background-color: blue;
   font-family: cursive, Verdana;
@@ -9,7 +9,6 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
 
 main {
   margin: 50px;
@@ -27,7 +26,7 @@ main {
 }
 
 h2 {
-  font-size: 5.0rem;
+  font-size: 5rem;
   margin-top: 0;
   margin-bottom: 15px;
   color: yellow;
@@ -68,12 +67,15 @@ p {
   border: none;
 }
 
-.btn-warning:active, .pokemon-button:active {
+.btn-warning:active,
+.pokemon-button:active {
   background-color: darkred !important;
   color: white !important;
 }
 
-.btn-warning:focus, .pokemon-button:focus, .form-control:focus {
+.btn-warning:focus,
+.pokemon-button:focus,
+.form-control:focus {
   box-shadow: none !important;
 }
 
@@ -81,9 +83,11 @@ p {
   border: none;
 }
 
-
-a, a:active, a:visited, a:focus {
-  color: yellow
+a,
+a:active,
+a:visited,
+a:focus {
+  color: yellow;
 }
 
 .pokemon-list {
@@ -100,7 +104,7 @@ a, a:active, a:visited, a:focus {
 
 .pokemon-button {
   padding: 8px;
-  font-size: 2.0rem;
+  font-size: 2rem;
   border: none;
   background-color: yellow;
   border-radius: 5px;
@@ -119,18 +123,17 @@ a, a:active, a:visited, a:focus {
 
 @keyframes pulse {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
 
   50% {
-      transform: scale(0.9);
+    transform: scale(0.9);
   }
 
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
-
 
 .lds-dual-ring {
   width: 150px;
@@ -171,6 +174,6 @@ a, a:active, a:visited, a:focus {
 }
 
 img {
-    align-self: center;
-    max-width: 250px;
+  align-self: center;
+  max-width: 250px;
 }
