@@ -135,20 +135,20 @@ a:focus {
   }
 }
 
-.lds-dual-ring {
+.spinner-grow {
   width: 150px;
   height: 150px;
 }
 
-.lds-dual-ring-hidden {
+.spinner-grow-hidden {
   display: none;
 }
 
-.lds-dual-ring-visible {
+.spinner-grow-ring-visible {
   display: inline-block;
 }
 
-.lds-dual-ring:after {
+.spinner-grow-ring:after {
   content: " ";
   display: block;
   width: 150px;
@@ -160,14 +160,6 @@ a:focus {
   animation: lds-dual-ring 1.2s linear infinite;
 }
 
-@keyframes lds-dual-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 .modal-content {
   background-color: rgb(247, 247, 14);
